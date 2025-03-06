@@ -23,6 +23,12 @@ p {
     color: #333;
 }
 
+p:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    text-decoration: underline;
+}
+
 img {
     display: block;
     width: 100%;
@@ -32,4 +38,13 @@ img {
     height: fit-content;
     margin: auto;
     border: 3px solid black;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transform: translate(50px, 50px);
+    transition: transform 0.5s;
+    transition-timing-function: ease-in-out 0.5s;
+    rotate: 4deg;
+    box-shadow: white 10px 10px 10px;
 }
