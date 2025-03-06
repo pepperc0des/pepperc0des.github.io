@@ -40,16 +40,14 @@ a {
 li{
     display: inline;
     margin: 0 10px;
-    border-right: 5px solid black;
     padding: 0 10px;
 }
 
-li:last-child {
-    border-right: none;
-}
 
-li a:hover {
+a:hover {
     color: #aeb1b4df;
+    transform: scale(1.5);
+    transition: 0.5s;
 }
 
 .active {

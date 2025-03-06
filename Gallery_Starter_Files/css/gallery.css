@@ -38,13 +38,14 @@ img {
     height: fit-content;
     margin: auto;
     border: 3px solid black;
+    transition-timing-function: ease-in-out;
+    transition: 1s;
 }
 
 img:hover {
     transform: scale(1.1);
     transform: translate(50px, 50px);
     transition: transform 0.5s;
-    transition-timing-function: ease-in-out 0.5s;
     rotate: 4deg;
     box-shadow: white 10px 10px 10px;
 }
