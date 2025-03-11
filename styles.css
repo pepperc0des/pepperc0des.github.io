@@ -74,3 +74,10 @@ img {
     margin: 10px;
     border: 6px solid #f0f9b7e7;
 }
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
