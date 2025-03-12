@@ -1,0 +1,102 @@
+body {
+    background-color: #FBFBFF;
+    width: 100%;
+}
+
+.icon {
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 62px;
+    font-size: 40px;
+    font-family: 'Mochiy Pop One';
+    transform: translate(50px,30px);  
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 5px;
+    margin-left: 650px;
+    transform: translate(0px, -60px);
+}
+
+.links {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+}
+
+.links:hover {
+    color: #a3a3a3;
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+a:link{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Mochiy Pop One';
+}
+
+a:hover{
+    color: #a3a3a3;
+}
+
+img {
+    width: 445px;
+    height: 433px;
+    border-radius: 78px;
+    margin-left: 170px;
+    border: 1px solid black;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+    box-shadow: #a3a3a3 10px 10px 10px;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: right;
+    margin-left: 800px;
+    margin-right: 160px;
+    transform: translate(60px, -300px);
+}
+
+h1 {
+    font-size: 65px;
+    font-family: 'Moirai One';
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 14px;
+    font-family: 'Mochiy Pop One';
+    text-align: left;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.projects {
+    width: 390px;
+    font-size: 36px;
+    font-family: 'Mochiy Pop One';
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95px;
+    background-color: red;
+
+}
