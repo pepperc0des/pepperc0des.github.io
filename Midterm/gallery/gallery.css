@@ -56,5 +56,25 @@ a:hover{
 }
 
 a:active{
-    opacity: 30%;
+    color: #000000;
+}
+
+.gallery-container {
+    transform: translateX(150px);
+}
+.polaroid {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.polaroid img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
