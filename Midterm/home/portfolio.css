@@ -49,12 +49,12 @@ a:link{
 
 a:visited{
     color: #000000;
+    opacity: 0.5;
 }
 
 a:hover{
     color: #a3a3a3;
 }
-
 
 .main-image {
     width: 445px;
@@ -73,14 +73,14 @@ a:hover{
     display: flex;
     justify-content: center;
     align-content: center;  
-    text-align: right;
+    text-align: center;
     margin-left: 630px;
     margin-right: 260px;
     transform: translate(60px, -300px);
 }
 
 h1 {
-    font-size: 65px;
+    font-size: 95px;
     font-family: 'Moirai One';
     color: #000000;
     margin: 0;
@@ -175,4 +175,9 @@ h2 {
 
 .project img.center {
     transform: translateY(-30px);
+}
+
+.typewriter {
+    font-family: 'Mochiy Pop One';
+    font-size: 32px;
 }
