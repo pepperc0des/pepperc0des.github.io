@@ -1,3 +1,6 @@
+// Source Code: https://www.youtube.com/watch?v=5k0pG9wjyfs Pro Coder
+
+
 const texts = [
     "STUDENT",
     "CREATOR",
@@ -33,4 +36,5 @@ function eraseText(){
     }
 }
 
-window.onload = typeWriter
+window.onload = typeWriter;
+
