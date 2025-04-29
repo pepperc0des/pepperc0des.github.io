@@ -17,9 +17,7 @@ body {
     justify-content: space-around;
     align-content: center;
     padding: 5px;
-    /* margin-left: 650px; */
 }
-
 
 .links {
     display: inline-block;
@@ -77,6 +75,20 @@ a:hover{
     }
 } */
 
+.main-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FBFBFF;
+    padding: 20px;
+    margin-top: 50px;
+    animation: fadeIn 1s ease-in-out; 
+}
+
+.main-profile {
+    /* margin-right: 150px; */
+    width: 250px;
+}
 .main-image {
     width: 445px;
     height: 433px;
@@ -90,14 +102,15 @@ a:hover{
     transition: transform 0.5s;
     box-shadow: #a3a3a3 10px 10px 10px;
 }
-.main-container{
+.main-text{
     display: flex;
     justify-content: center;
     align-content: center;  
     text-align: center;
-    margin-left: 630px;
-    margin-right: 260px;
-    transform: translate(60px, -300px);
+    width: 270px;
+    /* margin-left: 630px; */
+    /* margin-right: 260px; */
+    /* transform: translate(60px, -300px); */
 }
 
 h1 {
