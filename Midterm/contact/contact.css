@@ -125,3 +125,27 @@ button {
     align-self: center;
     margin-top: 5px;
 }
+
+.floating-text {
+    position: absolute;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    pointer-events: none;
+    animation: glideToCenter 1s ease-out forwards; 
+} 
+
+@keyframes glideToCenter {
+    0% {
+        top: 80px; 
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100% {
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}

@@ -51,7 +51,7 @@ a:hover{
     
 }
 
-/* .floating-text {
+.floating-text {
     position: absolute;
     font-size: 3rem;
     font-weight: bold;
@@ -73,7 +73,7 @@ a:hover{
         transform: translate(-50%, -50%);
         opacity: 1;
     }
-} */
+}
 
 .main-section {
     display: flex;
