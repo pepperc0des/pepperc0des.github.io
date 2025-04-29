@@ -3,48 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Gallery.css">
+    <link rel="stylesheet" href="work.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Moirai One:wght@400&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mochiy Pop One:wght@400&display=swap" />
-    <title>Gallery</title>
+    <title>Work</title>
 </head>
 <body>
   <div class="presentpage">
-    <div class="icon">Gallery</div>
+    <div class="icon">Work</div>
   </div>
 
   <div class="nav-container">
     <div class="links"><a href="/Midterm/home/portfolio.html">Home</a></div>
-    <div class="links"><a href="/Midterm/gallery/Gallery.html">Gallery</a></div>
+    <div class="links"><a href="/Midterm/gallery/work.html">Work</a></div>
     <div class="links"><a href="/Midterm/contact/contact.html">Contact</a></div>
     <div class="links"><a href="/Midterm/about/about.html">About</a></i></div>
   </div>
     
+    <h1 class="title">Work I've Done</h1>
+
     <div class="gallery-container">
         <div class="polaroid">
-          <p>Poster</p>
-          <img class="poster" src="MyImage/Ragdoll Adopt Ad.jpg" />
+          
+          <img src="MyImage/Ragdoll Adopt Ad.jpg" />
         </div>
         <div class="polaroid">
-          <p>Poster</p>
           <img src="MyImage/Great Wall of China.jpg" />
         </div>
         <div class="polaroid">
-          <p>Bedroom</p>
           <img src="MyImage/Bedroom.jpg" />
         </div>
         <div class="polaroid">
-          <p>Happy Cup</p>
           <img src="MyImage/Happy Cup.jpg" />
         </div>
         <div class="polaroid">
-          <p>Jordan</p>
-          <img src="MyImage/jordan.jpg" />
+          <img src="MyImage/Lowpoly_campfire.jpg" />
         </div>
         <div class="polaroid">
-          <p>Coffee</p>
-          <img src="MyImage/coffee.jpg" />
+          <img src="MyImage/Simple_pod.jpg" />
         </div>
       </div>
+    
+      <div class="popup-container" id="imagePopup">
+        <div class="popup-content">
+            <img src="" alt="Enlarged image" class="popup-image" id="popupImage">
+            <div class="close-button" id="closePopup">×</div>
+        </div>
+      </div>
+        
+    <script src="work.js"></script>
 </body>
 </html>

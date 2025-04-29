@@ -7,19 +7,16 @@
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Moirai One:wght@400&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mochiy Pop One:wght@400&display=swap" />
-    
+    <link rel="stylesheet" href="animate.css">
     <title>Yi's Portfolio</title>
 </head>
 <body>
-    <div class="presentpage">
-        <div class="icon">Home</div>
-    </div>
 
     <div class="nav-container">
-        <div class="links"><a href="/Midterm/home/portfolio.html">Home</a></div>
-        <div class="links"><a href="/Midterm/gallery/Gallery.html">Gallery</a></div>
-        <div class="links"><a href="/Midterm/contact/contact.html">Contact</a></div>
-        <div class="links"><a href="/Midterm/about/about.html">About</a></i></div>
+        <div class="links home" id="home"><a onclick="glideWord('Home')" href="/Midterm/home/portfolio.html">Home</a></div>
+        <div class="links work" id="work"><a onclick="glideWord('Work')" href="/Midterm/gallery/work.html">Work</a></div>
+        <div class="links contact" id="contact"><a href="/Midterm/contact/contact.html">Contact</a></div>
+        <div class="links about" id="about"><a href="/Midterm/about/about.html">About</a></i></div>
     </div>
     <div class="main-profile">
         <img src="coolcat.jpg" class="main-image" alt="Temporary">
@@ -55,6 +52,7 @@
             </button>
         </div>
     </div>
+
     <script src="portfolio.js"></script>
 </body>
 </html>
