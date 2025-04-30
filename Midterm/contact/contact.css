@@ -32,7 +32,6 @@
 
 .social-icon {
     font-size: 80px;
-    /* background-color: #d0d0d4; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -44,7 +43,7 @@
 }
 
 .social-icon a:hover {
-    color: #a3a3a3;
+    color: #222222;
     transition: 0.2s;
     transform: scale(1.1);
 }
