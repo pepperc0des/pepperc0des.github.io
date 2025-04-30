@@ -2,6 +2,8 @@
 
 ### Link: http://127.0.0.1:5500/Midterm/home/portfolio.html
 
+![alt text](image.png)
+
 ### Short Summary:
 My project is a personal portfolio page. Showing off my work as a designer and potentially developer.
 
