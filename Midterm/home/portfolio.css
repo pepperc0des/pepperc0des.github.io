@@ -1,102 +1,6 @@
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }    
-}
-
-body {
-    background-color: #FBFBFF;
-    /* overflow-x: hidden; */
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    padding: 5px;
-}
-
-.links {
-    display: inline-block;
-    padding: 10px;
-    margin: 10px;
-    font-size: 30px;} 
-
 .home{
     color: #a3a3a3;
     opacity: 0.5;
-}
-
-.links:hover {
-    color: #a3a3a3;
-    transition: 0.2s;
-    transform: scale(1.1);
-} 
-
-a:link{
-    text-decoration: none;
-    color: #000000;
-    font-family: 'Mochiy Pop One';
-}
-
-a:visited{
-    color: #000000;
-}
-
-a:hover{
-    color: #a3a3a3;
-    
-}
-
-.floating-text {
-    position: absolute;
-    font-size: 3rem;
-    font-weight: bold;
-    color: #333;
-    pointer-events: none;
-    animation: glideToCenter 1s ease-out forwards; 
-}
-
-@keyframes glideToCenter {
-    0% {
-        top: 80px; 
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 0;
-    }
-    100% {
-        top: 50%; 
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 1;
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-.page-content {
-    opacity: 0;
-    animation: fadeIn 1s ease-out forwards;
-    animation-delay: 0.5s;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 .main-section {
@@ -104,7 +8,6 @@ a:hover{
     justify-content: space-around;
     align-items: center;
     background-color: #FBFBFF;
-    /* padding: 20px; */
     margin-top: 50px;
 }
 
@@ -112,7 +15,6 @@ a:hover{
     width: 445px;
     height: 433px;
     border-radius: 78px;
-    /* margin-left: 170px; */
     border: 1px solid black;
 }
 
@@ -127,9 +29,6 @@ a:hover{
     align-content: center;  
     text-align: center;
     width: 290px;
-    /* margin-left: 630px; */
-    /* margin-right: 260px; */
-    /* transform: translate(60px, -300px); */
 }
 
 h1 {
@@ -157,7 +56,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* transform: translate(650px, -100px); */
 }
 
 .project-container {

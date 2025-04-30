@@ -10,23 +10,32 @@ function displayNavigationWord() {
   // Only show animation if we have a word from navigation
   // OR if it's the first-time visit to the home page
   if (word || (isHomePage && !sessionStorage.getItem('visitedHome'))) {
-      // Create the floating text element
-      const floating = document.createElement("div");
-      floating.className = "floating-text";
-      
-      // Use the navigation word if available, otherwise show "Welcome" for first home visit
-      floating.textContent = word || "Welcome to My Portfolio";
-      
-      document.body.appendChild(floating);
-      
-      // Clear the session storage
-      sessionStorage.removeItem('navigationWord');
-      sessionStorage.setItem('visitedHome', 'true');
-      
-      // Remove element after animation
-      setTimeout(() => {
-          floating.remove();
-      }, 2000);
+    
+    // Disables scrolling
+    document.body.style.overflow = 'hidden';
+
+    // Create the floating text element
+    const floating = document.createElement("div");
+    floating.className = "floating-text";
+    
+    // Use the navigation word if available, otherwise show "Welcome" for first home visit
+    floating.textContent = word || "Welcome to My Portfolio";
+    
+    document.body.appendChild(floating);
+    
+    // Clear the session storage
+    sessionStorage.removeItem('navigationWord');
+    sessionStorage.setItem('visitedHome', 'true');
+    
+    // Remove element after animation
+    setTimeout(() => {
+        floating.remove();
+    }, 2000);
+
+    // Re-enable scrolling after the animation
+    setTimeout(() => {
+        document.body.style.overflow = 'auto';
+    }, 2000);
   }
 }
 // End of Navigation Animation

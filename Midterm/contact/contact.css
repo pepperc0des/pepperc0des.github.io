@@ -1,45 +1,6 @@
-body {
-    background-color: #FBFBFF;
-    overflow-x: hidden;
-}
-
-.nav-container {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    padding: 5px;
-}
-
 .contact {
     color: #a3a3a3;
     opacity: 0.5;
-}
-
-.links {
-    display: inline-block;
-    padding: 10px;
-    margin: 10px;
-    font-size: 30px;
-}
-
-.links:hover {
-    color: #a3a3a3;
-    transition: 0.2s;
-    transform: scale(1.1);
-}
-
-.links a:link{
-    text-decoration: none;
-    color: #000000;
-    font-family: 'Mochiy Pop One';
-}
-
-.links a:visited{
-    color: #000000;
-}
-
-.links a:hover{
-    color: #a3a3a3;
 }
 
 .main-container {
@@ -59,7 +20,7 @@ body {
     border-radius: 30px;
     width: 600px;
     height: 500px;
-    background: linear-gradient(90deg, #333333, #9e9ea2);
+    background: linear-gradient(90deg, #949494, #bdbdbe);
 }
 
 .social-icons {
@@ -96,7 +57,6 @@ form {
     width: 50%;
     height: 90%;
     gap: 15px;
-    /* background-color: antiquewhite; */
 }
 
 input[type="text"], 
