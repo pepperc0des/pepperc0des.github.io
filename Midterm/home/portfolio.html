@@ -7,16 +7,31 @@
     <link rel="stylesheet" href="portfolio.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Moirai One:wght@400&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mochiy Pop One:wght@400&display=swap" />
-    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="../global/animate.css">
     <title>Yi's Portfolio</title>
+
+    <script>
+        // Function to store the navigation word in sessionStorage before navigating
+        function storeNavigationWord(word) {
+            sessionStorage.setItem('navigationWord', word);
+        }
+    </script>
 </head>
 <body>
 
     <div class="nav-container">
-        <div class="links home" id="home"><a onclick="glideWord('Home')" href="/Midterm/home/portfolio.html">Home</a></div>
-        <div class="links work" id="work"><a onclick="glideWord('Work')" href="/Midterm/gallery/work.html">Work</a></div>
-        <div class="links contact" id="contact"><a onclick="glideWord('Contact')" href="/Midterm/contact/contact.html">Contact</a></div>
-        <div class="links about" id="about"><a onclick="glideWord('About')" href="/Midterm/about/about.html">About</a></i></div>
+        <div class="links home" id="home">
+            <a href="/Midterm/home/portfolio.html" onclick="storeNavigationWord('Home')">Home</a>
+        </div>
+        <div class="links work" id="work">
+            <a href="/Midterm/gallery/work.html" onclick="storeNavigationWord('Work')">Work</a>
+        </div>
+        <div class="links contact" id="contact">
+            <a href="/Midterm/contact/contact.html" onclick="storeNavigationWord('Contact')">Contact</a>
+        </div>
+        <div class="links about" id="about">
+            <a href="/Midterm/about/about.html" onclick="storeNavigationWord('About')">About</a>
+        </div>
     </div>
 
     <div class="main-section">
@@ -31,29 +46,36 @@
         </div>
     </div>
     
+    
     <div class="project-container">
         <h2>Projects</h2>
         <div class="project-carousel">
-            <button class="arrow arrow-left">
-                <i class="fa fa-angle-left"></i>
-            </button>
-            <div class="image-container">
-                <div class="project">
-                    <img src="gamecover.png" class="side" alt="Project 1">
-                    <p>Project Name</p>
-                </div> 
-                <div class="project">
-                    <img src="gamecover.png" class="center" alt="Project 2">
-                    <p>Project Name</p>
-                </div> 
-                <div class="project">
-                    <img src="gamecover.png" class="side" alt="Project 3">
-                    <p>Project Name</p>
-                </div> 
-            </div>
-            <button class="arrow arrow-right">
-                <i class="fa fa-angle-right"></i>
-            </button>
+            <div class="project">
+                <!-- <img src="gamecover.png" alt="Project 1"> -->
+                <p>Project 1</p>
+            </div> 
+            <div class="project">
+                <!-- <img src="gamecover.png" alt="Project 2"> -->
+                <p>Project 2</p>
+            </div> 
+            <div class="project">
+                <!-- <img src="gamecover.png" alt="Project 3"> -->
+                <p>Project 3</p>
+            </div> 
+            <div class="project">
+                <!-- <img src="gamecover.png" alt="Project 4"> -->
+                <p>Project 4</p>
+            </div> 
+            <div class="project">
+                <!-- <img src="gamecover.png" alt="Project 5"> -->
+                <p>Project 5</p>
+            </div> 
+            <div class="project">
+                <!-- <img src="gamecover.png" alt="Project 6"> -->
+                <p>Project 6</p>
+            </div> 
+            <button id="next">></button>
+            <button id="prev"><</button>
         </div>
     </div>
 

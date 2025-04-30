@@ -7,16 +7,30 @@
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Moirai One:wght@400&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mochiy Pop One:wght@400&display=swap" />
-    
+    <link rel="stylesheet" href="../global/animate.css">
+    <script>
+        // Function to store the navigation word in sessionStorage before navigating
+        function storeNavigationWord(word) {
+            sessionStorage.setItem('navigationWord', word);
+        }
+    </script>
     <title>Contact</title>
 </head>
 <body>
 
     <div class="nav-container">
-        <div class="links home"><a onclick="glideWord('Home')" href="/Midterm/home/portfolio.html">Home</a></div>
-        <div class="links work"><a onclick="glideWord('Work')" href="/Midterm/gallery/work.html">Work</a></div>
-        <div class="links contact"><a onclick="glideWord('Contact')" href="/Midterm/contact/contact.html">Contact</a></div>
-        <div class="links about"><a onclick="glideWord('About')" href="/Midterm/about/about.html">About</a></i></div>
+        <div class="links home" id="home">
+            <a href="/Midterm/home/portfolio.html" onclick="storeNavigationWord('Home')">Home</a>
+        </div>
+        <div class="links work" id="work">
+            <a href="/Midterm/gallery/work.html" onclick="storeNavigationWord('Work')">Work</a>
+        </div>
+        <div class="links contact" id="contact">
+            <a href="/Midterm/contact/contact.html" onclick="storeNavigationWord('Contact')">Contact</a>
+        </div>
+        <div class="links about" id="about">
+            <a href="/Midterm/about/about.html" onclick="storeNavigationWord('About')">About</a>
+        </div>
     </div>
     <div class="main-container">
         <div class="contact-container">
@@ -24,15 +38,8 @@
                 <a target="_blank" href="https://github.com/pepperc0des"><i class="fa fa-github-square"></i></a>
                 <a target="_blank" href="https://www.instagram.com/pepsyi.cle/"><i class="fa fa-instagram"></i></a>
                 <a target="_blank" href="https://www.linkedin.com/in/yi-li-ba97412b6/"><i class="fa fa-linkedin-square"></i></a>
-                <!-- <i class="fa fa-envelope"></i> -->
             </div>
-            <!-- <div class="contact-info">
-                <div class="social-link"></div>
-                <div class="social-link"></div>
-                <div class="social-link"></div>
-                <div class="social-link "><a href="mailto:yil53066@gmail.com"></a></div> How does this work?
-            </div>-->
-    
+            
             <form action="https://formspree.io/f/meogozqn" method="POST">
                 <input type="text" id="name" name="name" placeholder="Name" required />
               

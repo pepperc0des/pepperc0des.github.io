@@ -39,33 +39,42 @@ function eraseText(){
 window.onload = typeWriter;
 // End of Text Animation
 
-// //Navigation Animation
-// function glideWord(word) {
-//     const floating = document.createElement("div");
-//     floating.className = "floating-text";
-//     floating.textContent = word;
+// Project Image Carousel
+// Source Code: https://www.youtube.com/watch?v=Xh-wIMqohD0 LunaDev
+let items = document.querySelectorAll('.project-carousel .project');
+let next = document.getElementById('next');
+let prev = document.getElementById('prev');
 
-//     floating.style.top = "80px";
-//     floating.style.left = "50%";
-//     floating.style.transform = "translateX(-50%)";
-//     floating.style.opacity = 1;
-
-//     document.body.appendChild(floating);
-
-//     setTimeout(() => {
-//       floating.remove();
-//     }, 1500);
-// }
-// //End of Navigation Animation
-
-// "Projects" Section
-function next(){
-    const nxtBtn = document.querySelector(".arrow-left")
-    
+let active = 3;
+function loadShow(){
+    let stt = 0;
+    items[active].style.transform = `none`;
+    items[active].style.zIndex = 1;
+    items[active].style.filter = 'none';
+    items[active].style.opacity = 1;
+    for(var i = active + 1; i < items.length; i++){
+        stt++;
+        items[i].style.transform = `translateX(${120*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(-1deg)`;
+        items[i].style.zIndex = -stt;
+        items[i].style.filter = 'blur(5px)';
+        items[i].style.opacity = stt > 2 ? 0 : 0.6;
+    }
+    stt = 0;
+    for(var i = active - 1; i >= 0; i--){
+        stt++;
+        items[i].style.transform = `translateX(${-120*stt}px) scale(${1 - 0.2*stt}) perspective(16px) rotateY(1deg)`;
+        items[i].style.zIndex = -stt;
+        items[i].style.filter = 'blur(5px)';
+        items[i].style.opacity = stt > 2 ? 0 : 0.6;
+    }
 }
-
-function prev(){
-    const prevBtn = document.querySelector(".arrow-right")
-    
+loadShow();
+next.onclick = function(){
+    active = active + 1 < items.length ? active + 1 : active;
+    loadShow();
 }
-// End of "Projects" Section
+prev.onclick = function(){
+    active = active - 1 >= 0 ? active - 1 : active;
+    loadShow();
+}
+// End of Project Image Carousel

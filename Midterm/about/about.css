@@ -9,6 +9,12 @@ body {
     align-content: center;
     padding: 5px;
 }
+
+.about {
+    color: #a3a3a3;
+    opacity: 0.5;
+}
+
 .links {
     display: inline-block;
     padding: 10px;
@@ -38,11 +44,18 @@ a:hover{
     color: #a3a3a3;
 }
 
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
 .main-image {
     width: 445px;
     height: 433px;
     border-radius: 50%;
-    margin-left: 170px;
+    /* margin-left: 170px; */
     border: 1px solid black;
 }
 
@@ -51,17 +64,20 @@ a:hover{
     transition: transform 0.5s;
     box-shadow: #a3a3a3 10px 10px 10px;
 }
-.main-container{
+.main-text{
     display: flex;
     justify-content: center;
     align-content: center;  
     text-align: right;
-    margin-left: 630px;
-    margin-right: 260px;
-    transform: translate(60px, -300px);
+    width: 700px;
+    /* margin-left: 630px; */
+    /* margin-right: 260px; */
+    /* transform: translate(60px, -300px); */
 }
 
 h1 {
+    display: flex;
+    justify-content: flex-end;
     font-size: 90px;
     font-family: 'Moirai One';
     color: #000000;
@@ -75,10 +91,10 @@ p {
     text-align: justify;
     line-height: 2;
     margin: 0;
-    padding: 0;
+    padding-left: 40px;
 }
 
-.floating-text {
+/* .floating-text {
     position: absolute;
     font-size: 3rem;
     font-weight: bold;
@@ -100,4 +116,4 @@ p {
         transform: translate(-50%, -50%);
         opacity: 1;
     }
-}
+} */

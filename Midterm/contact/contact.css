@@ -1,6 +1,6 @@
 body {
     background-color: #FBFBFF;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 .nav-container {
@@ -8,6 +8,11 @@ body {
     justify-content: space-around;
     align-content: center;
     padding: 5px;
+}
+
+.contact {
+    color: #a3a3a3;
+    opacity: 0.5;
 }
 
 .links {
@@ -124,28 +129,4 @@ button {
     font-family: 'Mochiy Pop One', sans-serif;
     align-self: center;
     margin-top: 5px;
-}
-
-.floating-text {
-    position: absolute;
-    font-size: 3rem;
-    font-weight: bold;
-    color: #333;
-    pointer-events: none;
-    animation: glideToCenter 1s ease-out forwards; 
-} 
-
-@keyframes glideToCenter {
-    0% {
-        top: 80px; 
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 0;
-    }
-    100% {
-        top: 50%; 
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 1;
-    }
 }
