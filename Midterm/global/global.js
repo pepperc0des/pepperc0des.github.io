@@ -2,7 +2,7 @@
 
 //Navigation Animation
 function displayNavigationWord() {
-  const word = sessionStorage.getItem('navigationWord');
+  const word = sessionStorage.getItem('navigationWord'); //sessionStorage is a client-side storage that allows you to store data for the duration of the page session 
   
   // Special case for home page
   const isHomePage = window.location.pathname.includes('/Midterm/home/portfolio.html');
@@ -30,7 +30,7 @@ function displayNavigationWord() {
     // Remove element after animation
     setTimeout(() => {
         floating.remove();
-    }, 2000);
+    }, 1300);
 
     // Re-enable scrolling after the animation
     setTimeout(() => {
@@ -38,13 +38,12 @@ function displayNavigationWord() {
     }, 2000);
   }
 }
-// End of Navigation Animation
 
 // Hide content initially and show the navigation word animation
 document.addEventListener('DOMContentLoaded', function() {
   const pageContent = document.querySelector('body');
   if (pageContent) {
-      pageContent.style.opacity = 0;
+      pageContent.style.opacity = 1;
       
       // Add animation class after a slight delay
       setTimeout(() => {
@@ -56,4 +55,3 @@ document.addEventListener('DOMContentLoaded', function() {
   displayNavigationWord();
 });
 //End of Navigation Animation
-
