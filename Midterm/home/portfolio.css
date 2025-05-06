@@ -14,6 +14,8 @@
 .main-profile img {
     width: 445px;
     height: 433px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 78px;
     border: 1px solid black;
 }

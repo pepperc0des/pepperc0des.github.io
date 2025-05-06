@@ -13,6 +13,7 @@
 .main-image {
     width: 445px;
     height: 433px;
+    object-fit: cover;
     border-radius: 50%;
     border: 1px solid black;
 }
